@@ -350,7 +350,7 @@ h4 {
             <div class="register-link">
                 <p>Don't have an account? <a href="#">Register</a></p>
             </div>
-
+/* Loader */
             <div id="page">
                 <div id="container">
                     <div class="ring"></div>
