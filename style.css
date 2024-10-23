@@ -72,7 +72,6 @@ h2 {
   position:absolute;
   right:8px;
   top:50%;
-  margin: 15px 0 -15px;
   color: #fff !important;
   transform: translateY(-50%);
 }
