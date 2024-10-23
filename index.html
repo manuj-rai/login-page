@@ -15,16 +15,20 @@
       
             <div class="input-box">
               <span class="icon">
-                <ion-icon name="mail"></ion-icon>
-              </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 4.99L4 6zm0 12H4V8l8 5l8-5z" />
+                </svg>
+            </span>
               <input type="email" required>
               <label>Email</label>
             </div>
       
             <div class="input-box">
-              <span class="icon">
-                <ion-icon name="lock-closed"></ion-icon>
-              </span>
+              <span class="icon" onclick="togglePasswordVisibility()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                        <path id="eye-icon" fill="currentColor" d="M12 4.5c-5 0-9 3.5-10 7.5c1 4 5 7.5 10 7.5s9-3.5 10-7.5c-1-4-5-7.5-10-7.5zm0 13c-2.5 0-4.5-2-4.5-4.5S9.5 8.5 12 8.5s4.5 2 4.5 4.5s-2 4.5-4.5 4.5zm0-7.5a3 3 0 1 0 0 6a3 3 0 0 0 0-6z" />
+                    </svg>
+                </span>
               <input type="password" required>         
               <label>Password</label>
             </div>
