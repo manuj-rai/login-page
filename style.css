@@ -73,7 +73,7 @@ h2 {
   right:8px;
   top:50%;
   margin: 15px 0 -15px;
-  color: #fff;
+  color: #fff !important;
   transform: translateY(-50%);
 }
 .remember-forgot {
