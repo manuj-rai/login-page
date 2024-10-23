@@ -1,5 +1,5 @@
 function togglePasswordVisibility() {
-var passwordField = document.getElementById('<%= txtLoginPassword.ClientID %>');
+var passwordField = document.getElementById('txtLoginPassword');
 var eyeIcon = document.getElementById('eye-icon');
 
 if (passwordField.type === "password") {
