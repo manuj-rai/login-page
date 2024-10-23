@@ -1,26 +1,13 @@
-      <script>
-        const togglePassword =
-              document.querySelector('#togglePassword');
- 
-        const password = 
-              document.querySelector('#id_password');
- 
-        togglePassword.
-        addEventListener('click', function (e) {
- 
-            // Toggle the type attribute 
-            const type = password.getAttribute(
-                'type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
- 
-            // Toggle the eye slash icon 
-            if (togglePassword.src.match(
-"https://media.geeksforgeeks.org/wp-content/uploads/20210917150049/eyeslash.png")) {
-                togglePassword.src =
-"https://media.geeksforgeeks.org/wp-content/uploads/20210917145551/eye.png";
-            } else {
-                togglePassword.src =
-"https://media.geeksforgeeks.org/wp-content/uploads/20210917150049/eyeslash.png";
-            }
-        }); 
-    </script>
+function togglePasswordVisibility() {
+var passwordField = document.getElementById('<%= txtLoginPassword.ClientID %>');
+var eyeIcon = document.getElementById('eye-icon');
+
+if (passwordField.type === "password") {
+      passwordField.type = "text"; // Show password
+      eyeIcon.setAttribute("d", "M12 4.5c-5 0-9 3.5-10 7.5c1 4 5 7.5 10 7.5s9-3.5 10-7.5c-1-4-5-7.5-10-7.5zm0 13c2.5 0 4.5-2 4.5-4.5S14.5 8.5 12 8.5s-4.5 2-4.5 4.5S9.5 17.5 12 17.5zm0-7.5a3 3 0 1 0 0 6a3 3 0 0 0 0-6z");
+      } 
+else {
+      passwordField.type = "password"; // Hide password
+      eyeIcon.setAttribute("d", "M12 4.5c-5 0-9 3.5-10 7.5c1 4 5 7.5 10 7.5s9-3.5 10-7.5c-1-4-5-7.5-10-7.5zm0 13c-2.5 0-4.5-2-4.5-4.5S9.5 8.5 12 8.5s4.5 2 4.5 4.5s-2 4.5-4.5 4.5zm0-7.5a3 3 0 1 0 0 6a3 3 0 0 0 0-6z");
+      }
+}
